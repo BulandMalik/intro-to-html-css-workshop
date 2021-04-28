@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <h1 class="text-center text-xl my-2 font-semibold">Collage</h1>
+    <!-- This is a form that will allow uses to add images to a collage -->
+    <div class="flex justify-center mb-4">
+      <form class="space-y-2 bg-indigo-200 p-6">
+        <fieldset class="flex justify-between items-center">
+          <label class="mr-6 text-right" for="title">Title</label>
+          <input type="text" name="title" id="title" class="border-2" />
+        </fieldset>
+        <fieldset class="flex justify-between items-center">
+          <label class="mr-6 text-right" for="description">Description</label>
+          <input
+            type="text"
+            name="description"
+            id="description"
+            class="border-2"
+          />
+        </fieldset>
+        <fieldset class="flex justify-between items-center">
+          <label class="mr-6 text-right" for="imageUrl">Image URL</label>
+          <input type="text" name="imageUrl" id="imageUrl" class="border-2" />
+        </fieldset>
+        <fieldset>
+          <button
+            class="w-full p-3 mt-2 bg-indigo-500 hover:bg-indigo-600 transition text-yellow-100"
+            type="submit"
+          >
+            Add Image
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <section
+      class="grid sm:grid-cols-2 md:grid-cols-3 gap-2 w-11/12 mx-auto max-w-5xl"
+      id="images"
+    ></section>
+    <!-- 
+      The handlebars library allows us to create a template that will generate html 
+      based on an object containing information that we want to display to our users.
+      This template will not be visible to our users until we actually use it to add
+      some html to our web page.
+    -->
+    <script id="card-template" type="text/handlebars">
+      <div>
+        <img
+          src="{{imageUrl}}"
+          class="object-cover sm:h-56 w-full"
+        />
+        <h2>{{title}}</h2>
+        <p>{{ description }}</p>
+      </div>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

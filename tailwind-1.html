@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div class="container mx-auto w-11/12 space-y-4 my-4">
+      <h1 class="text-3xl my-2">Here's a Tailwind Button</h1>
+      <button
+        type="button"
+        class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition ease-in-out duration-200"
+      >
+        Primary
+      </button>
+      <p class="mb-4">
+        If you'd like to read about how Tailwind works, click the button below
+        to learn more.
+      </p>
+      <a
+        href="https://tailwindcss.com/docs"
+        class="inline-block bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-md transition"
+      >
+        Tailwind Docs
+      </a>
+      <p>
+        With Tailwind, you'll want to spend a lot of time reading the
+        documentation linked above. You can search through the docs for
+        different properties that you'd like to apply and then try them out in
+        the browser to see how they work. One of the easiest ways to learn about
+        tailwind is to look at other people's html. You can take the following
+        approach to learning from other people's use of tailwind classes.
+      </p>
+      <ol class="list-decimal list-inside">
+        <li>
+          Create a new codesandbox and add this link tag within the &lt;head>
+          tag (you can triple click on the html below and it will select the
+          entire link tag. Copy the tag below and paste it within the &lt;head>
+          tag in your new sandbox)
+          <input
+            type="text"
+            class="block w-full select-text"
+            disabled
+            value='&lt;link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"&gt;'
+          />
+        </li>
+        <li>
+          Use the developer tools to take a look at source code from
+          <a class="text-blue-600" href="https://builtwithtailwind.com/"
+            >a site that uses TailwindCSS</a
+          >
+        </li>
+        <li>
+          With the elements tab selected, right click on an element, hover over
+          the copy menu option, and select Copy Element.
+        </li>
+
+        <li>Return to the codesandbox and paste the element in there.</li>
+        <li>
+          Save the code in your sandbox (cmd/ctrl + S) and you should see the
+          results in the browser on the right half of the screen.
+        </li>
+      </ol>
+      <p>
+        For your reference, here is a list of some of the css classes that we've
+        applied within this sandbox. In parentheses, you'll see the name of the
+        CSS property that the preceding CSS class is designed to affect.
+      </p>
+      <ul class="my-2">
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/background-color"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >bg-blue-500 (background-color)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/hover-focus-and-other-states#hover"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >hover: (prefix)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/text-color"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >text-white (text-color)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/padding#class-reference"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >py-2 and px-4 (padding)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/border-radius#class-reference"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >rounded-md (border-radius)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/transition-property#class-reference"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >transition (transition-property)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/transition-duration"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >duration-200 (transition-duration)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/transition-timing-function"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >ease-in-out (transition-timing-function)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/docs/margin"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 transition-colors"
+            rel="noopener noreferrer"
+            >mb-2 (margin-bottom)</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        </li>
+      </ul>
+      <h3 class="text-3xl font-semibold">An Exercise</h3>
+      <p>
+        Below this paragraph, try to build a button that looks something like
+        this:
+      </p>
+      <img
+        src="https://res.cloudinary.com/dnocv6uwb/image/upload/v1619037249/Screen_Shot_2021-04-21_at_1.32.40_PM_o8ggjk.png"
+        alt="button with black border"
+        width="120"
+      />
+      <p>
+        Add a button with type button below and use the class html attribute to
+        apply the appropriate css classes to the button so it looks like the
+        image above.
+      </p>
+      <!-- replace this comment with your button -->
+    </div>
+  </body>
+</html>
